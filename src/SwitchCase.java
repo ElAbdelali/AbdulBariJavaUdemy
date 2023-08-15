@@ -77,7 +77,31 @@ public class SwitchCase {
                 break;
         }
 
+        System.out.println("Menu Driven program -- Please answer the below: ");
+        System.out.println("Please enter which operation you would like to carry out: ADD, SUB, MUL, or DIV");
+        String operation = scan.nextLine();
 
+        System.out.println("Please enter two numbers: " );
+        int n1 = scan.nextInt();
+        int n2 = scan.nextInt();
+
+        switch(operation){
+            case "ADD":
+                System.out.println(n1 + n2);
+                break;
+            case "SUB":
+                System.out.println(n1 - n2);
+                break;
+            case "MUL":
+                System.out.println(n1 * n2);
+                break;
+            case "DIV":
+                System.out.println(n1 / n2);
+                break;
+            default:
+                System.out.println("Nada");
+                break;
+        }
 
     }
 }
