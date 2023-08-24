@@ -20,20 +20,27 @@ class Student{
         } else {
             return 'F';
         }
-
+    }
+    public String toString()
+    {
+        return "Roll No:"+roll+"\n"+"Name:"+name+"\n"+"Course:"+course+"\n";
     }
 
 }
 public class StudentTest {
     public static void main(String[] args) {
         Student student = new Student();
-
+        student.roll=1;
+        student.name="John";
+        student.course="CS";
         student.mark1 = 70;
         student.mark2 = 80;
         student.mark3 = 33;
 
         System.out.printf("%s%n", student.grade());
         System.out.printf("%.2f%n", student.average());
-        System.out.printf("%.2f", student.total());
+        System.out.printf("%.2f%n", student.total());
+        System.out.println("Details:\n"+ student );
+
     }
 }
