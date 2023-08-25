@@ -11,12 +11,24 @@ class Circle{
         return perimeter();
     }
 }
+class CylinderInheritancePractice extends Circle{
+    public double height;
+    public double volume(){
+        return area() * height;
+    }
+}
 public class Circle1{
 
     public static void main(String[] args) {
 
         Circle circle = new Circle();
         Circle circle2 = new Circle();
+        CylinderInheritancePractice c = new CylinderInheritancePractice();
+        c.radius = 7;
+        c.height = 10;
+
+        System.out.println("volume: " + c.volume());
+        System.out.println("area: " + c.area());
 
         circle.radius = 14;
         circle2.radius = 15;
