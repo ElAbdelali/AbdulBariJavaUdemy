@@ -7,6 +7,7 @@ public class FinallyBlock {
 //        System.out.println(10/2);
 //        System.out.println("Final Message");
         // to always display something, use the following:
+        // even if we handle the exception, the finally block will also execute but to save resources, we do not need to have one
         try{
             System.out.println(10/0);
         }catch(ArithmeticException e){
